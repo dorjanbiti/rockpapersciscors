@@ -19,44 +19,48 @@
        
         const playerSelection = prompt("CHOSE YOUR WEAPON: Rock, Paper, Sciscors");
       function playRound(playerSelection, computerSelection) {
-            playerSelection();
+            
            if (playerSelection==="Rock"&&computerSelection==="Rock"){
-               return "Tie"
+               console.log("Tie") 
            }
            else  if (playerSelection==="Rock"&&computerSelection==="Paper"){
             counterComputer++;   
-            return "Lose"
+            console.log("Lose") 
            }
            else if (playerSelection==="Rock"&&computerSelection==="Sciscors"){
               counterPlayer++; 
-              return "Win"
+              console.log("win") 
                
            }
            else if (playerSelection==="Paper"&&computerSelection==="Rock"){
             counterPlayer++;   
-            return "Win"
+            console.log("Win") 
            }
            else if (playerSelection==="Paper"&&computerSelection==="Paper"){
-               return "Tie"
+               console.log("Tie") 
            }
            else if (playerSelection==="Paper"&&computerSelection==="Sciscors"){
             counterComputer++;    
-            return "Lose"
+            console.log("Lose") 
            }
            else if (playerSelection==="Sciscors"&&computerSelection==="Sciscors"){
-               return "Tie"
+               console.log("Tie") 
            }
            else if (playerSelection==="Sciscors"&&computerSelection==="Rock"){
             counterPlayer++;    
-            return "Win"
+            console.log("Win") 
            }
            else if (playerSelection==="Sciscors"&&computerSelection==="Paper"){
             counterComputer++;    
-            return "Lose"
+            console.log("Lose") 
            }
+           
        }
+       console.log(playRound(playerSelection,computerSelection));
+       console.log(playRound(playerSelection,computerSelection));
+       console.log(playRound(playerSelection,computerSelection));
        
-       
+     
       
 
        
@@ -69,8 +73,7 @@
 
 
 
-console.log("Player: ",counterPlayer);
-console.log("Computer: " ,counterComputer);
+
    </script> 
 </body>
 </html>
