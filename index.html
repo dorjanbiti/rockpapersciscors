@@ -7,73 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-   <script>
-       var counterPlayer=0;
-       var counterComputer=0;
-       const computerSelection = computerPlay();
-       function computerPlay (){
-           var result = ["Rock","Paper",'Sciscors'];
-           return result[(Math.floor(Math.random() *3))]
-       }
-      
-       
-        const playerSelection = prompt("CHOSE YOUR WEAPON: Rock, Paper, Sciscors");
-      function playRound(playerSelection, computerSelection) {
-            
-           if (playerSelection==="Rock"&&computerSelection==="Rock"){
-               console.log("Tie") 
-           }
-           else  if (playerSelection==="Rock"&&computerSelection==="Paper"){
-            counterComputer++;   
-            console.log("Lose") 
-           }
-           else if (playerSelection==="Rock"&&computerSelection==="Sciscors"){
-              counterPlayer++; 
-              console.log("win") 
-               
-           }
-           else if (playerSelection==="Paper"&&computerSelection==="Rock"){
-            counterPlayer++;   
-            console.log("Win") 
-           }
-           else if (playerSelection==="Paper"&&computerSelection==="Paper"){
-               console.log("Tie") 
-           }
-           else if (playerSelection==="Paper"&&computerSelection==="Sciscors"){
-            counterComputer++;    
-            console.log("Lose") 
-           }
-           else if (playerSelection==="Sciscors"&&computerSelection==="Sciscors"){
-               console.log("Tie") 
-           }
-           else if (playerSelection==="Sciscors"&&computerSelection==="Rock"){
-            counterPlayer++;    
-            console.log("Win") 
-           }
-           else if (playerSelection==="Sciscors"&&computerSelection==="Paper"){
-            counterComputer++;    
-            console.log("Lose") 
-           }
-           
-       }
-       console.log(playRound(playerSelection,computerSelection));
-       console.log(playRound(playerSelection,computerSelection));
-       console.log(playRound(playerSelection,computerSelection));
-       
-     
-      
-
-       
-    
-
-
-
-
-
-
-
-
-
-   </script> 
+ <div>
+    <input type="button" id='Rock' value='Rock' ></input>
+    <input type="button" id='Paper' value='Paper'></input>
+    <input type="button" id='Sciscors' value='Sciscors'></input>
+</div> 
+<div id='results'></div>
 </body>
+ <script src='index.js'>
+      
+   </script> 
 </html>
